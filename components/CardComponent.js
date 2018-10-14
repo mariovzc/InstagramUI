@@ -25,17 +25,17 @@ class CardComponent extends Component {
         <CardItem>
           <Left>
             <Thumbnail 
-              source={require('../assets/profile.jpg')}
+              source={{uri: this.props.thumb}}
             />
             <Body>
-              <Text>Varum</Text>
+              <Text>{this.props.userName}</Text>
               <Text note>Oct 14, 2018</Text>
             </Body>
           </Left>
         </CardItem>
         <CardItem cardBody>
           <Image 
-            source={require('../assets/card.jpg')}
+            source={{uri: this.props.picture}}
             style={{ height: 200, width: null, flex: 1 }}
           />
         </CardItem>
@@ -67,8 +67,8 @@ class CardComponent extends Component {
         <CardItem>
           <Body>
             <Text> 
-              <Text style={{fontWeight: '900'}}>
-                Varum 
+              <Text style={{fontWeight: '900', paddingRight: 5}}>
+                {this.props.userName} 
               </Text>
               hello i am a instagram clone for testing :-D
             </Text>
