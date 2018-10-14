@@ -1,15 +1,23 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import {
+  createStackNavigator
+} from 'react-navigation'
+import MainScreen from './components/MainScreen'
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <AppStackNavigator/>
     );
   }
 }
+
+const AppStackNavigator = createStackNavigator({
+  Main: {
+    screen: MainScreen
+  }
+})
 
 const styles = StyleSheet.create({
   container: {
