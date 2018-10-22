@@ -9,12 +9,6 @@ import { Icon } from 'native-base';
 
 class LikesTab extends Component {
 
-  static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name='ios-heart' style={{color: tintColor}} />
-    )
-  }
-
   render() {
     return (
       <View style={styles.container}>

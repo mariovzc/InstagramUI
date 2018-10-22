@@ -9,12 +9,6 @@ import { Icon } from 'native-base';
 
 class AddMedia extends Component {
 
-  static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name='ios-add-circle' style={{color: tintColor}} />
-    )
-  }
-
   render() {
     return (
       <View style={styles.container}>

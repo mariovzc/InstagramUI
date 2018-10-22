@@ -22,10 +22,12 @@ class HomeTab extends Component {
       users: []
     }
   }
+
   static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name='ios-home' style={{color: tintColor}} />
-    )
+    headerLeft: <Icon name='ios-camera-outline' style={{paddingLeft: 10}} />,
+    title: 'Instagram',
+    headerRight: <Icon name='ios-send-outline' style={{paddingRight: 10}} />,
+    headerTitleStyle: {textAlign: 'center', flex: 1}    
   }
 
   render() {
@@ -81,8 +83,6 @@ class HomeTab extends Component {
   }
 }
 
-export default HomeTab;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -90,3 +90,4 @@ const styles = StyleSheet.create({
   },
 });
 
+export default HomeTab;

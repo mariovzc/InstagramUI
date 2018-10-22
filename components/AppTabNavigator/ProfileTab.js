@@ -10,9 +10,10 @@ import { Icon } from 'native-base';
 class ProfileTab extends Component {
 
   static navigationOptions = {
-    tabBarIcon: ({tintColor}) => (
-      <Icon name='person' style={{color: tintColor}} />
-    )
+    headerLeft: <Icon name='ios-camera-outline' style={{paddingLeft: 10}} />,
+    title: 'Profile',
+    headerRight: <Icon name='ios-send-outline' style={{paddingRight: 10}} />,
+    headerTitleStyle: {textAlign: 'center', flex: 1}    
   }
 
   render() {
